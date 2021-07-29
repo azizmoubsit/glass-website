@@ -1,1 +1,2 @@
-# glass-website
+# Glass website
+![alt text](./screenshot.png)
