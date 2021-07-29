@@ -1,0 +1,256 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    background: linear-gradient(to right top, #4d694b, #d0cef1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.glass {
+    width: 60%;
+    margin: auto;
+    min-height: 80vh;
+    border-radius: 1rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);    
+    background: linear-gradient(to right bottom, rgb(255 255 255 / 34%), rgb(255 255 255 / 29%));
+    display: flex;
+}
+
+.circle2, .circle1, .circle3, .circle4 {
+    background: linear-gradient(to right bottom, rgb(255 255 255 / 22%), rgb(255 255 255));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 10%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
+
+.circle3 {
+    top: 10%;
+    left: 5%;
+}
+
+.circle4 {
+    bottom: 5%;
+    right: 14%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
+.font-bold {
+    font-weight: 700;
+}
+
+.glass .left-side {
+    flex: 35%;
+    max-width: 35%;
+    padding: 30px;
+    background: linear-gradient(to right bottom, rgb(255 255 255 / 32%), rgb(255 255 255 / 41%));
+    border-radius: 1rem;
+}
+
+.glass .left-side .about {
+    text-align: center;
+}
+
+.glass .left-side .about .about-img img {
+    border-radius: 50%;
+}
+
+.glass .left-side .about h4 {
+    color: #426696;
+    opacity: .8;
+}
+
+.glass .left-side .about h5 {
+    color: #658ec6;
+    opacity: .8;
+}
+
+.items {
+    width: 100%;
+}
+
+.items .item {
+    display: flex;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+
+.items .item h3 {
+    color: #426696;
+    opacity: .8;
+    padding: 0rem 2rem;
+}
+
+.join {
+    background: linear-gradient(to right top, #65dfc9, #6cddeb);
+    padding: 10px;
+    position: relative;
+    height: 130px;
+    border-radius: 1rem;
+}
+
+.join h3 {
+    text-align: center;
+    width: 40%;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.join img {
+    position: absolute;
+    right: 20px;
+    top: -19%;
+}
+
+.right-side {
+    flex: 65%;
+    max-width: 65%;
+    padding: 5rem;
+}
+
+.right-side .status {
+    padding: 0 15px
+}
+
+.right-side input {
+    padding: 4px;
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(to right top, #f7f7f7, #ffffff);
+}
+
+.right-side h1 {
+    color: #426696;
+    opacity: .8;
+    font-size: 3em;
+}
+
+.right-side .card {
+    background: linear-gradient(to right top, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5));
+    padding: 20px;
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+.right-side .card h2 {
+    color: #426696;
+    opacity: .8;
+}
+
+
+.right-side .card h5 {
+    color: rgb(74, 189, 168);
+    opacity: .8;
+}
+
+.right-side .card .parent-progress {
+    background: linear-gradient(to right top, #cfcfcf, #c5c2c2);
+    width: 60%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.right-side .card .progress {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 60%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1199px) {
+    .glass {
+        width: 80%;
+    }
+    .left-side{
+        min-width: 10%;
+        flex: 10%;
+        padding: 10px;
+    }
+    .right-side{
+        min-width: 70%;
+        flex: 70%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .right-side, .left-side {
+        flex: 50%;
+        min-width: 50%;
+    }
+    
+    .join h3 {
+        font-size: 18px;
+    }
+    .glass {
+        width: 100%;
+    }
+    .left-side{
+        min-width: 10%;
+        flex: 10%;
+        padding: 10px;
+    }
+    .right-side{
+        min-width: 70%;
+        flex: 70%;
+        padding: 10px;
+    }
+    .join {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .left-side {
+        padding: 10px 0 !important;
+    }
+
+    .items .item {
+        padding: 1rem 10px;
+    }
+}
